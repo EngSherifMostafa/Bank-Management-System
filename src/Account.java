@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Date;
 
-public abstract class Account implements Comparable, Summable, Payable{
+public abstract class Account implements Comparable<Account>, Summable, Payable{
     private final int accountNo;
     private final String accountType;
     private final Date accountCreationDate;
@@ -64,7 +64,7 @@ public abstract class Account implements Comparable, Summable, Payable{
     }
     //compareTo concrete method from interface Comparable
     @Override
-    public int compareTo(Object account) {
+    public int compareTo(Account account) {
         if(account instanceof Account) {
             if(this.accountCurrentBalance > ((Account)account).accountCurrentBalance)
                 return 1;

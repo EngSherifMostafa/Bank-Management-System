@@ -87,8 +87,8 @@ public class BankManagementSystem {
         System.out.println(mohamed);
 
         //static method hiding
-        System.out.println(ahmedAccount.getAccountSN());
-        System.out.println(mohamedAccount.getAccountSN());
+        // System.out.println(ahmedAccount.getAccountSN());
+        // System.out.println(mohamedAccount.getAccountSN());
 
         //*****************************************************************************/
 
